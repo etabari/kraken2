@@ -22,7 +22,7 @@ function download_file() {
   file="$1"
   if [ -n "$KRAKEN2_USE_FTP" ]
   then
-    wget -q ${FTP_SERVER}${file}
+    wget --no-verbose ${FTP_SERVER}${file}
   else
     rsync --no-motd ${RSYNC_SERVER}${file} .
   fi

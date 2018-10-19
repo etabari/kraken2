@@ -204,7 +204,7 @@ process begins; this can be the most time-consuming step.  If you
 have multiple processing cores, you can run this process with
 multiple threads, e.g.:
 
-    kraken2-build --standard --threads 24 --db $DBNAME
+    kraken2-build --standard --threads 24 --db $DBNAME --use-ftp
 
 Using 32 threads on an AWS EC2 r4.8xlarge instance with 16 dual-core
 hyperthreaded 2.30 GHz CPUs and 244 GB of RAM, the build process took
